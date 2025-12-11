@@ -711,3 +711,35 @@ h6,
     color: #B0B9AE;
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
+
+/*whatsapp button  */
+.whatsapp {
+  position: fixed;
+  bottom: 3%;
+  right: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.whatsapp img {
+  width: 40px;
+}
+
+.whatsapp::before {
+  content: "Chat with us on Whatsapp";
+  color: white;
+  background-color: teal;
+  padding: 8px;
+  border-radius: 10px;
+  transform: translateX(250px);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s all ease-in;
+}
+
+.whatsapp:hover::before {
+  transform: translateX(0px);
+  opacity: 1;
+}
