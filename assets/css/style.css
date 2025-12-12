@@ -480,6 +480,23 @@ h6,
     background: var(--primary);
 }
 
+/* service on mobile */
+@media (max-width: 768px) {
+  .service-item .service-title {
+    top: -100%;
+  }
+  .service-item .service-text {
+    top: 0;
+  }
+  .service-item .service-text::before {
+    top: -55px;
+  }
+    .service-item .service-text p {
+      font-size: 14px;
+      line-height: 1.4;
+  }
+}
+
 
 /*** Project ***/
 .project-carousel {
